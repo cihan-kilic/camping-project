@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 165, 50, 1);
+}
+
+h1 {
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+  align-self: center;
+}
+
+.header {
+  /* color: rgba(255, 165, 50, 1); */
+  text-align: center;
+  padding: 10px;
+  justify-items: center;
+  background-image: url(../fire.png);
+}
+
+.container {
+  display: flex;
+  background-color: rgba(255, 165, 50, 1);
+}
+
+.left-side {
+  display: flex;
+  width: 7%;
+  height: 100vh;
+  flex-grow: 2;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.mordor {
+  display: flex;
+  width: 12.5%;
+  height: fit-content;
+  position: fixed;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  width: 75%;
+  height: 100vh;
+  flex-grow: 5;
+  margin: 0 auto;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 10vh;
+  left: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(255, 170, 55, 1);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlink {
+  text-decoration: none;
+  margin: 10px 20px;
+  color: black;
+}
+
+.navlink:hover {
+  transform: scale(1.2);
+}
+
+.register {
+  margin-left: auto;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin: 0;
+  max-width: 400px;
+  height: 50%;
+  /* background-color: rgba(255, 170, 55, 1); */
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form label {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.form input {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  display: flex;
+  width: 60%;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: beige;
+  border-radius: 25px;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.campfire {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 35vh;
+  align-items: center;
+  justify-content: end;
+  align-self: end;
+  margin-right: 100px;
+}
+
+.campfire img {
+  margin-bottom: 45vh;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background-color: rgba(255, 165, 50, 1);
+  text-align: center;
+  align-self: last baseline;
+  justify-self: last baseline;
+  width: 100%;
+  height: 10vh;
+  padding: 10px;
+  justify-items: end;
+}
+
+.social-icons {
+  display: flex;
+  margin: 15px 50px;
+  column-gap: 25px;
+  font-size: 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-left: 280px;
+    color: white;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 24px;
+    padding: 15px;
+    color: white;
+  }
+
+  #menu-toggle:checked ~ .navbar {
+    transform: translateY(0);
+  }
+
+  #menu-toggle:checked ~ .navbar a {
+    display: block;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .nav {
+    height: 5vh;
+  }
+
+  .form-group {
+    width: 70%;
+    margin-top: 0;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+
+  .form-group input {
+    width: 40vw;
+  }
+
+  .campfire {
+    display: none;
+  }
+
+  .header {
+    width: 100vw;
+  }
+
+  button {
+    width: 80%;
+    font-size: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  .mordor {
+    width: 25%;
+  }
+
+  h1 {
+    height: min-content;
+    margin-top: 0;
+  }
+
+  .header {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim</title>
+    <link rel="stylesheet" href="./contact/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>ISENGARD KAMP ODALARI</h1>
+    </div>
+    <div class="container">
+      <div class="sidebar left-side">
+        <img class="mordor" src="./mordor.jpg" />
+      </div>
+      <div class="main">
+        <div class="nav">
+          <label for="menu-toggle" class="hamburger">☰</label>
+          <input type="checkbox" id="menu-toggle" />
+          <nav class="navbar">
+            <a class="navlink home" href="./index.html">Anasayfa</a>
+            <a class="navlink camp" href="./camp.html">Kamp Alanı</a>
+            <a class="navlink reserv" href="./reservation.html">Rezervasyon</a>
+            <a class="navlink contact" href="#">İletişim</a>
+            <a class="navlink register" href="./Register.html">Kayıt Ol</a>
+          </nav>
+        </div>
+        <div class="contactbox">
+          <h1>İLETİŞİM</h1>
+          <ul>
+            <li><span>Adres:</span> Mordor Yolu, Sauron Caddesi, Isengard</li>
+            <li>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6173.008390137394!2d27.89222670131676!3d36.80278224407743!3m2!1i1024!2i768!4f13.1!5e1!3m2!1str!2str!4v1742243337611!5m2!1str!2str"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </li>
+            <li><span>Telefon:</span> 0212 123 45 67</li>
+            <li>
+              <span>Sosyal Medya:</span>
+              <div class="sosyal-medya">
+                <a href="https://facebook.com/kullaniciadi" target="_blank"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a href="https://twitter.com/kullaniciadi" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="https://instagram.com/kullaniciadi" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="https://linkedin.com/in/kullaniciadi" target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://youtube.com/kullaniciadi" target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </li>
+            <li><span>E-posta:</span> info@isengard.com</li>
+            <li>
+              <button onclick="window.location.href='mailto:info@isengard.com'">
+                Posta Gönder
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 165, 50, 1);
+}
+
+h1 {
+  margin: auto;
+  font-family: "Dancing Script", cursive;
+}
+
+.header {
+  /* color: rgba(255, 165, 50, 1); */
+  text-align: center;
+  padding: 10px;
+  justify-items: center;
+  background-image: url(../fire.png);
+}
+
+.container {
+  display: flex;
+  background-color: rgba(255, 165, 50, 1);
+}
+
+.left-side {
+  display: flex;
+  width: 7%;
+  height: 100vh;
+  flex-grow: 2;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.mordor {
+  display: flex;
+  width: 12.5%;
+  height: fit-content;
+  position: fixed;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  width: 75%;
+  height: 100vh;
+  flex-grow: 5;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 10vh;
+  margin-left: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(255, 170, 55, 1);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlink {
+  text-decoration: none;
+  margin: 10px 20px;
+  color: black;
+}
+
+.navlink:hover {
+  transform: scale(1.2);
+}
+
+.register {
+  margin-left: auto;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  margin-left: 20px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.navbar a {
+  display: block;
+}
+
+.text {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgba(255, 165, 50, 1);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.titletext {
+  display: flex;
+  margin: 0 100px;
+}
+
+.orc {
+  height: 50px;
+  opacity: 0.7;
+  transition: all 0.5s ease-in-out;
+}
+
+.orc:hover {
+  transform: scale(1.5);
+}
+
+.campingbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.camping {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  width: 55%;
+  height: auto;
+  border-radius: 200px;
+}
+
+.camping:hover {
+  transform: scale(1.1);
+}
+
+.camp-img {
+  width: 54%;
+  height: auto;
+  border-radius: 200px;
+}
+
+.campingtext {
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+}
+
+.camp-link {
+  display: block;
+  width: fit-content;
+}
+
+.footer {
+  background-color: rgba(255, 165, 50, 1);
+  text-align: center;
+  align-self: last baseline;
+  justify-self: last baseline;
+  width: 100%;
+  height: 10vh;
+  padding: 10px;
+  justify-items: end;
+}
+
+.social-icons {
+  display: flex;
+  margin: 15px 50px;
+  column-gap: 25px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .titletext {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .orc {
+    visibility: hidden;
+  }
+
+  .mordor {
+    width: 25%;
+  }
+
+  .right-side {
+    visibility: hidden;
+  }
+
+  .nav {
+    font-size: 10px;
+  }
+
+  .navlink {
+    text-decoration: none;
+    margin: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-left: 250px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 24px;
+    padding: 15px;
+    color: white;
+  }
+
+  #menu-toggle:checked ~ .navbar {
+    transform: translateY(0);
+  }
+
+  #menu-toggle:checked ~ .navbar a {
+    display: block;
+  }
+
+  .campingtext {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .emoji {
+    display: none;
+  }
+
+  .footer {
+    height: 5vh;
+    margin-top: 10px;
+  }
+
+  .social-icons {
+    margin: 5px 10px;
+    font-size: 15px;
+  }
+}

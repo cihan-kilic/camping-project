@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezervasyon</title>
+    <link rel="stylesheet" href="./Reservation/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>ISENGARD KAMP ODALARI</h1>
+    </div>
+    <div class="container">
+      <div class="sidebar left-side">
+        <img class="mordor" src="./mordor.jpg" />
+      </div>
+      <div class="main">
+        <div class="nav">
+          <label for="menu-toggle" class="hamburger">☰</label>
+          <input type="checkbox" id="menu-toggle">
+          <nav class="navbar">
+            <a class="navlink home" href="./index.html">Anasayfa</a>
+            <a class="navlink camp" href="./camp.html">Kamp Alanı</a>
+            <a class="navlink reserv" href="#">Rezervasyon</a>
+            <a class="navlink contact" href="./contact.html">İletişim</a>
+            <a class="navlink register" href="./Register.html">Kayıt Ol</a>
+          </nav>
+        </div>
+        <h1>Rezervasyon</h1>
+        <div class="reservation">
+          
+          <form class="form" action="reservation.php" method="post">
+            <div class="form-group">
+              <label for="name">Adınız:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Cihan KILIÇ"
+              />
+            </div>
+            <br />
+            <div class="form-group">
+              <label for="email">E-posta:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="info@isengard.com"
+              />
+            </div>
+            <br />
+            <div class="form-group">
+              <label for="phone">Telefon:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="05434134980"
+              />
+            </div>
+            <br />
+            <div class="form-group">
+              <label for="date">Tarih:</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <br />
+
+            <div class="form-group">
+              <label for="people">Kişi Sayısı:</label>
+              <input type="number" id="people" name="people" required
+              placeholder="3"
+            </div>
+            <br />
+          </form>
+        </div>
+        
+        <button type="submit">Rezervasyon Yap</button>
+
+        
+      </div>
+      <div class="campfire">
+        <img src="./kamp ateşi.jpg" alt="kamp ateşi" />
+      </div>
+      <div class="footer">
+        <!-- <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div> -->
+    </div>
+  </body>
+</html>
