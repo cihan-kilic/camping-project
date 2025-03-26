@@ -275,3 +275,12 @@ h1 {
     font-size: 15px;
   }
 }
+
+.body.menu-open {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.menu {
+  pointer-events: auto;
+}
