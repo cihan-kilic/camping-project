@@ -3,81 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kamp Alanı</title>
+    <title>ISENGARD</title>
     <link rel="stylesheet" href="./Camping/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
+    <div class="header">
+      <h1>ISENGARD KAMP ODALARI</h1>
+    </div>
     <div class="container">
-      <div class="top-side"><h1>ISENGARD KAMP ODALARI</h1></div>
-      <div class="header">
-        <label for="menu-toggle" class="hamburger">☰</label>
-        <input type="checkbox" id="menu-toggle" />
-        <nav class="navbar">
-          <a class="navlink home" href="./index.html" aria-label="home"
-            >Anasayfa</a
-          >
-          <a class="navlink camp" href="#" aria-label="camparea">Kamp Alanı</a>
-          <a
-            class="navlink reserv"
-            href="./reservation.html"
-            aria-label="reservation"
-            >Rezervasyon</a
-          >
-          <a class="navlink contact" href="./contact.html" aria-label="contact"
-            >İletişim</a
-          >
-          <a
-            class="navlink register"
-            href="./Register.html"
-            aria-label="register"
-            >Kayıt Ol</a
-          >
-        </nav>
-      </div>
-      <div class="left-side">
+      <div class="sidebar left-side">
         <img class="mordor" src="./mordor.jpg" alt="mordor" />
       </div>
-
-      <div class="gallery">
-        <!-- <h2>ORC'LARIMIZ</h2> -->
-        <a href="#img1" aria-label="campphoto"
-          ><img class="box1" src="./alavara3.jpg" alt="campphoto" />
-        </a>
-        <a href="#img2" aria-label="campphoto"
-          ><img class="box2" src="./alavara4.jpg" alt="campphoto" />
-        </a>
-        <a href="#img3" aria-label="campphoto"
-          ><img class="box3" src="./alavara5.jpg" alt="campphoto" />
-        </a>
-        <a href="#img4" aria-label="campphoto"
-          ><img class="box4" src="./alavara6.jpeg" alt="campphoto"
-        /></a>
+      <div class="main">
+        <div class="nav">
+          <label for="menu-toggle" class="hamburger">☰</label>
+          <input type="checkbox" id="menu-toggle" />
+          <nav class="navbar">
+            <a class="navlink home" href="./index.html" aria-label="home"
+              >Anasayfa</a
+            >
+            <a class="navlink camp" href="#" aria-label="camparea"
+              >Kamp Alanı</a
+            >
+            <a
+              class="navlink reserv"
+              href="./reservation.html"
+              aria-label="reservation"
+              >Rezervasyon</a
+            >
+            <a
+              class="navlink contact"
+              href="./contact.html"
+              aria-label="contact"
+              >İletişim</a
+            >
+            <a
+              class="navlink register"
+              href="./Register.html"
+              aria-label="register"
+              >Kayıt Ol</a
+            >
+          </nav>
+        </div>
+        <div class="gallery">
+          <h1 class="titletext">KAMP ALANIMIZ</h1>
+          <label for="toggle">
+            <img class="img 1" src="./alavara3.jpg" alt="camping" />
+            <img class="img 2" src="./alavara4.jpg" alt="camping" />
+            <img class="img 3" src="./alavara5.jpg" alt="camping" />
+            <img class="img 4" src="./alavara6.jpg" alt="camping" />
+          </label>
+          <input type="checkbox" id="toggle" hidden />
+          <div id="lightbox">
+            <label for="toggle" class="close-btn">&times;</label>
+            <img class="img 1" src="./alavara3.jpg" alt="camping" />
+          </div>
+          <div id="lightbox">
+            <label for="toggle" class="close-btn">&times;</label>
+            <img class="img 2" src="./alavara4.jpg" alt="camping" />
+          </div>
+          <div id="lightbox">
+            <label for="toggle" class="close-btn">&times;</label>
+            <img class="img 3" src="./alavara5.jpg" alt="camping" />
+          </div>
+          <div id="lightbox">
+            <label for="toggle" class="close-btn">&times;</label>
+            <img class="img 4" src="./alavara6.jpg" alt="camping" />
+          </div>
+        </div>
       </div>
-
-      <div id="img1" class="lightbox">
-        <a href="#">✖</a>
-        <img src="./alavara3.jpg" />
-      </div>
-      <div id="img2" class="lightbox">
-        <a href="#">✖</a>
-        <img src="./alavara4.jpg" />
-      </div>
-      <div id="img3" class="lightbox">
-        <a href="#">✖</a>
-        <img src="./alavara5.jpg" />
-      </div>
-      <div id="img4" class="lightbox">
-        <a href="#">✖</a>
-        <img src="./alavara6.jpeg" />
-      </div>
-    </div>
-    <div class="footer">
-      <!-- <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div> -->
     </div>
   </body>
 </html>

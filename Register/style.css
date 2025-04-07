@@ -61,7 +61,8 @@ p {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  width: 87vw;
+  width: 100%;
+  font-size: 25px;
   height: 10vh;
   left: 0;
 }
@@ -120,6 +121,13 @@ p {
   display: block;
 }
 
+.titletext {
+  margin: auto;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -151,7 +159,7 @@ button {
   display: flex;
   width: 30%;
   padding: 10px;
-  margin: 0 50px;
+  margin-bottom: 250vh;
   background-color: beige;
   border-radius: 25px;
   color: black;
@@ -163,7 +171,13 @@ button {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
-    margin-left: 280px;
+    margin-left: auto;
+  }
+
+  .titletext {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    text-align: center;
   }
 
   .navbar {
@@ -240,5 +254,9 @@ button {
 
   .header {
     width: 100vw;
+  }
+
+  .register {
+    margin: 0;
   }
 }

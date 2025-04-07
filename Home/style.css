@@ -55,6 +55,7 @@ h1 {
 .nav {
   display: flex;
   flex-wrap: wrap;
+  font-size: 25px;
   width: 100%;
   height: 10vh;
   margin-left: 0;
@@ -105,15 +106,17 @@ h1 {
   display: flex;
   position: relative;
   flex-wrap: wrap;
+  text-align: center;
   width: 80%;
   height: auto;
   padding: 20px;
+  font-size: 30px;
   color: rgb(0, 0, 0);
 }
 
 .intro {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   background-color: rgba(255, 165, 50, 1);
@@ -124,11 +127,12 @@ h1 {
 
 .titletext {
   display: flex;
-  margin: 0 100px;
+  margin: 0;
+  font-size: 50px;
 }
 
 .orc {
-  height: 50px;
+  height: 60px;
   opacity: 0.7;
   transition: all 0.5s ease-in-out;
 }
@@ -138,7 +142,7 @@ h1 {
 }
 
 .campingbox {
-  display: flex;
+  display: block;
   flex-direction: row;
   flex-wrap: wrap;
   height: auto;
@@ -193,10 +197,33 @@ h1 {
   font-size: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
+
+   html, body {
+    overflow-x: hidden;
+   }
+   
   .titletext {
-    margin: 0;
-    font-size: 25px;
+    margin-left: 0;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .text{
+    margin-left: 15vw;
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .camp-img{
+    width: 60%;
+    margin-left: 15vw;
+  }
+
+  .camping{
+    width: 60%;
+    margin-left: 23vw;
   }
 
   .orc {
@@ -219,12 +246,10 @@ h1 {
     text-decoration: none;
     margin: 5px 10px;
   }
-}
 
-@media screen and (max-width: 768px) {
   .hamburger {
     display: block;
-    margin-left: 250px;
+    margin-left: auto;
   }
 
   .navbar {
@@ -257,6 +282,7 @@ h1 {
   }
 
   .campingtext {
+    margin-left: 15vw;
     font-size: 30px;
     text-align: center;
   }
@@ -267,7 +293,7 @@ h1 {
 
   .footer {
     height: 5vh;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   .social-icons {
@@ -276,11 +302,12 @@ h1 {
   }
 }
 
-.body.menu-open {
+.body .menu-open{
   overflow: hidden;
   pointer-events: none;
 }
 
 .menu {
   pointer-events: auto;
+}
 }
