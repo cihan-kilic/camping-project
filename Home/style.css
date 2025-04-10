@@ -15,7 +15,6 @@ h1 {
 }
 
 .header {
-  /* color: rgba(255, 165, 50, 1); */
   text-align: center;
   padding: 10px;
   justify-items: center;
@@ -46,7 +45,6 @@ h1 {
 .main {
   display: flex;
   flex-direction: column;
-  /* border: 2px solid black; */
   width: 75%;
   height: 100vh;
   flex-grow: 5;
